@@ -350,6 +350,8 @@ func (l *queryLog) logEntryToJSONEntry(entry *logEntry) map[string]interface{} {
 		}
 	}
 
+	jsonEntry["upstream"] = entry.Upstream
+
 	return jsonEntry
 }
 
